@@ -7,38 +7,78 @@
     <script src="js/html5shiv.min.js"></script>
     <title>Document</title>
     <style>
-
         * {
             box-sizing: border-box;
         }
-        .container {
-            width:100;
-            margin:0 auto;
-            background-color: cadetblue;
-            height:800px;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+          
+            margin:1em auto;
+        }
+        div {
             padding:0.75em;
         }
-
-        .box {
-            background-color: brown;
-            width:300px;
-            height:300px;
-            float:left;
-            margin-right:10px;
-            margin-bottom: 10px;
-            position: absolute;
+        #div-1 {
+            background-color: black;
+            color:#fff;
+            float: left;
+           
+        }
+        #div-before, #div-after {
+            background-color: mediumslateblue;
         }
 
+        #div-1a {
+            background-color:crimson;
+            float:left;
+            width:50%;
+          
+            
+        }
+        #div-1b {
+            background-color: green;
+            width:50%;
+            float:left;
+          
+        }
+        #div-1c {
+            background-color: blue;
+            clear:both;
+            
+        }
 
+        #div-1 + div, p {
+            margin-bottom: 0;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="box"></div>
-       
-        
+    <div id="div-before">
+        id=div-before
     </div>
-   
+    <div id="div-1">
+        <p>div1</p>
+        <div id="div-1a">
+            id=div-1a
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste beatae obcaecati, 
+               voluptatum velit animi hic tempora consequatur quidem vitae accusantium.</p>
+        </div>
+        <div id="div-1b">
+            id=div1-b
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste beatae obcaecati, 
+                voluptatum velit animi hic tempora consequatur quidem vitae accusantium.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quasi! Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Perspiciatis, minus.
+            </p>
+        </div>
+        <div id="div-1c">
+            id=div1-c
+        </div>
+    </div>
+    <div id="div-after">
+        id=div-after
+    </div>
 </body>
 </html>
 
